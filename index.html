@@ -20,7 +20,9 @@
         nav {
             background: rgb(239, 80, 41);
             margin: 0 auto;
+            margin-bottom: 20px;
             display: flex;
+            border-radius: 20px;
             padding: 10px;
         }
 
@@ -81,14 +83,13 @@
 <body>
     <!-- All content goes here -->
     <div id="all-contents">
-
         <nav>
             <h1> Larry's website </h1>
-            <ul>
-                <li>
+            <ul id="nav-ul">
+                <li class="nav-li">
                     <a href="index.html"> Home </a>
                 </li>
-                <li>
+                <li class="nav-li">
                     <a href="portfolio.html"> Portfolio </a>
                 </li>
             </ul>
@@ -97,16 +98,16 @@
 
         <main>
             <!-- sidebar img -->
-            <div>
-                <img width="200" src="https://i.imgflip.com/65fuq1.jpg">
+            <div class="sidebar">
+                <img class="sidebar-img" src="https://i.imgflip.com/65fuq1.jpg">
             </div>
 
             <!-- content section -->
-            <div>
+            <div class="content">
                 <h2> Welcome to my website </h2>
                 <p> this is my experimental website </p>
                 <!-- interest section -->
-                <div>
+                <div id="interests">
                     <h3> i like music games and sleep </h3>
                     <ul>
                         <li> my favorite games are fighting games </li>
