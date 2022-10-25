@@ -8,16 +8,17 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: darkkhaki;
 			font-size: 300%;
 			text-align: center;
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 0px;  /* <--- Change me! */
+			left: 100px;  /* <--- Change me! */
 		}
 		.board{
 			height: 100vh;
+			background-color: blanchedalmond;
 		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -61,7 +62,7 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			
+			var PositionX = 0;
 
 			
 			/* 
@@ -71,6 +72,7 @@
 			*/
 			function update() {
 				
+				moveBoxTo(PositionX)
 
 			};
 
