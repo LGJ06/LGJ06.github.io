@@ -21,11 +21,18 @@
                     break;
                     
                 case 'grace':
-                    collectable.scale.x = collectable.scale.y = 0.2;
+                    collectable.scale.x = collectable.scale.y = 0.04;
                     break;
                 case 'kennedi':
-                    collectable.scale.x = collectable.scale.y = 0.9;
+                    collectable.scale.x = collectable.scale.y = 0.04;
                     break;
+
+                case 'max': 
+                    collectable.scale.x = collectable.scale.y = 0.08;
+                    break;
+                case 'steve':
+                    collectable.scale.x = collectable.scale.y = 0.04;
+
                 
                 default:
                     // code
