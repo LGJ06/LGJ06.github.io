@@ -52,6 +52,8 @@
 
 			// Every 50 milliseconds, call the update Function (see below)
 			var interval = setInterval(update, 50);
+			
+			//stops game by stoppint interval
 			function endgame(){
 				clearInterval(interval)
 			}
