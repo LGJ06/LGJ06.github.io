@@ -90,7 +90,7 @@
 			var positionY;
 			var speedY;
 			var misclicks = 10;
-
+			var isGameMoving  = true
 
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
@@ -124,17 +124,21 @@
 				if (speed < 0) {
 					speed = speed - 3
 				}
-
+				if (isGameMoving === true) {
+					points = points + 1
+				}
 
 
 			};
 
 			function handleMisClick() {
 				//change counting variable//
-
+				misclicks = misclicks - 1
 
 				//if its 0 then end game//
-
+				if (misclicks === 0){
+					endgame() 
+				}
 
 			};
 		})();
