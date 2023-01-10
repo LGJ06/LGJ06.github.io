@@ -76,7 +76,13 @@
             var OrderNumber = prompt("what would you like to order?");
             var Total = 0
             if (OrderNumber === "4") {
-                total += 80
+                total += 80;
+                alert('you ordered 120 tacos')
+            } else if (OrderNumber === "3") {
+                total += 20;
+                alert('you ordered a quesidilla')
+            } else {
+                alert('sorry wrong combo number')
             }
         }
     </script>
