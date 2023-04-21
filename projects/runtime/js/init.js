@@ -34,12 +34,19 @@ var init = function (window) {
     // TODO 2 : add background
     var background = opspark.makeBackground(app, ground);
     view.addChild(background);
+    var moon = draw.bitmap("img/moon.png");
+    moon.x = .0003;
+    moon.y = .0002;
+    moon.scaleX = 10.0;
+    moon.scaleY = 10.0;
+    background.addChild(moon);
+   
     
     var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | q self destruct!', 
         '20px Arial',
         '#ccc', 'left');
     help.x = 10;
-    help.y = ground.y + ground.getBounds(ㅤ).height + 10;
+    help.y = ground.y + ground.getBounds().height + 10;
     view.addChild(help);
     
     window.opspark.makeSpriteSheet(data)
@@ -63,7 +70,7 @@ var init = function (window) {
     view.addChild(fps);
     app.addUpdateable(fps);
     
-    function update(ㅤ) {
+    function update() {
         space.forEach(function (body) {
             physikz.updatePosition(body);
             physikz.updateSpace(space, physikz.hitTestRadial, rules.handleCollision);
