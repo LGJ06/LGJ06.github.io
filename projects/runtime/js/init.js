@@ -39,7 +39,7 @@ var init = function (window) {
         '20px Arial',
         '#ccc', 'left');
     help.x = 10;
-    help.y = ground.y + ground.getBounds().height + 10;
+    help.y = ground.y + ground.getBounds(ㅤ).height + 10;
     view.addChild(help);
     
     window.opspark.makeSpriteSheet(data)
@@ -63,7 +63,7 @@ var init = function (window) {
     view.addChild(fps);
     app.addUpdateable(fps);
     
-    function update() {
+    function update(ㅤ) {
         space.forEach(function (body) {
             physikz.updatePosition(body);
             physikz.updateSpace(space, physikz.hitTestRadial, rules.handleCollision);
