@@ -37,9 +37,11 @@ var init = function (window) {
     var moon = draw.bitmap("img/moon.png");
     moon.x = .0003;
     moon.y = .0002;
-    moon.scaleX = 10.0;
-    moon.scaleY = 10.0;
+    moon.scaleX = 1.0;
+    moon.scaleY = 1.0;
     background.addChild(moon);
+
+    for()
    
     
     var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | q self destruct!', 
