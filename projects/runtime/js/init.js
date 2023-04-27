@@ -41,7 +41,7 @@ var init = function (window) {
     moon.scaleY = 1.0;
     background.addChild(moon);
 
-    for()
+    
    
     
     var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | q self destruct!', 
