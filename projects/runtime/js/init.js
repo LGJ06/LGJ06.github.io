@@ -73,7 +73,7 @@ var init = function (window) {
     app.addUpdateable(fps);
     
     function update() {
-        space.forEach(function (body) {
+        space.forEach(function (BODY) {
             physikz.updatePosition(body);
             physikz.updateSpace(space, physikz.hitTestRadial, rules.handleCollision);
             playerManager.hitTest(body);
