@@ -39,7 +39,7 @@ var init = function (window) {
     moon.y = .0002;
     moon.scaleX = 1.0;
     moon.scaleY = 1.0;
-    background.addChild(moon);
+    background.addChild(MOON);
 
     
    
